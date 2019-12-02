@@ -1,0 +1,78 @@
+<!-- =================================
+Simple Greeting Dashboard
+================================= //-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Greeting Dashboard</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+<style>
+.settings {
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+transform: translateX(-100%);
+transition: transform 1s;
+}
+input {
+   padding: 5px;
+   font-size: 12px;
+   width: 150px;
+   height: 20px;
+}
+
+button {
+   height: 30px;
+   width: 70px;
+   background: none; /* This removes the default background */
+   color: #313131;
+   border: 1px solid #313131;
+   border-radius: 50px; /* This gives our button rounded edges */
+   font-size: 12px;
+   cursor: pointer;
+}
+form {
+   padding-top: 20px;
+}
+
+.settings-open.settings {
+   transform: none;
+}
+
+.greeting-container {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.greeting {
+   font-family: sans-serif;
+   font-size: 60px;
+   color: #fff;
+}
+body {
+   background-color: #c670ca;
+   background-image: linear-gradient(45deg, #c670ca 0%, #25a5c8 52%, #20e275 90%);
+}
+html {
+   height: 100%;
+}
+</style>
+</head>
+<body>
+   <!-- My code will go here -->
+<button id="settings-button">Settings</button>
+<div class="settings" id="settings">
+   <form class="name-form" id="name-form" action="#">
+      <input class="name-input" type="text"
+        id="name-input" placeholder="Type your name here...">
+      <button type="submit" class="name-button">Add</button>
+   </form>
+</div>
+<div class="greeting-container">
+   <h2 class="greeting" id="greeting"></h2>
+</div>
+   <script src="./main.js"></script>
+</body>
+</html>
+

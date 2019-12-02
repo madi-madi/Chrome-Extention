@@ -1,0 +1,23 @@
+var userName;
+function openSettings() {
+   document.getElementById("settings").classList.toggle("settings-open");
+.greeting-container {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+.greeting {
+   font-family: sans-serif;
+   font-size: 60px;
+   color: #fff;
+}
+body {
+   background-color: #c670ca;
+   background-image: linear-gradient(45deg, #c670ca 0%, #25a5c8 52%, #20e275 90%);
+}
+h
+tml {
+   height: 100%;
+}
+
+}
